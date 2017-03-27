@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicación</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+  <!--<link rel="stylesheet" href="css/jquery.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.structure-1.4.5.min.css"/>
+  <!--Grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+
+
+</head>
+
+<body>
+
+ <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Datos Personales del Alumno</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Foto de Perfil</h1>
+    <div>
+    <p>Esta es mi imagen de Perfil</p>
+    <br>
+   </div>
+   <div>
+     <img src="imagenes/fotoPerfil.jpg" width="50%" height="50%">
+    </div>
+   </div>
+  </div>
+  <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Datos Generales</h2>
+     <p>Se muestra el nombre</p>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Fecha de Nacimiento</h2>
+     <p>Se muestra del día, mes y año de nacimiento</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Domicilio</h2>
+    <p>Se muestra el domicilio del alumno</p>
+   </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Deporte Favorito</h2>
+    <p>Se muestra el deporte que mas le agrada al alumno</p>
+   </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Otros gustos e Intereses</h2>
+    <p>Se muestra gustos del alumno</p>
+   </a>
+  </li>
+  </ul>
+</div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+   <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+  <div>
+   <h4>Aplicación Uno</h4>
+   <h4>José Antonio Ramírez Franco</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>NOMBRE</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>
+   <h2>José Antonio Ramírez Franco</h2>
+  </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Uno, JARF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>FECHA DE NACIMIENTO</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>
+   <h2>18 de Enero del 2000</h2></div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Uno, JARF</h4>
+   </div>
+ </div> 
+  
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>DOMICILIO</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>
+   <h2>Calle Abeto N°51, Colonia Prados El Leon</h2></div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Uno, JARF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>DEPORTE FAVORITO</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>
+   <h2>Mi deporte favorito es el "Basquetball o baloncesto"</h2>
+   <img src="imagenes/basketball.jpg" width="50%" height="50%">
+  </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Uno, JARF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>GUSTOS E INTERESES</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>
+   <h2>En mi tiempo libre suelo dibujar Manga o Anime</h2>
+   <img src="imagenes/hobbie.jpg" width="50%" height="50%">
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Uno, JARF</h4>
+   </div>
+ </div>
+ 
+ 
+ 
+    </body>
+</html>
